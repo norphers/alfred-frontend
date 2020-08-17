@@ -1,0 +1,27 @@
+<div class="card border-primary mb-3">
+    <div class="card-body text-primary">
+        <h5 class="card-title">User List</h5>
+
+        <table class="table table-borderless">
+            <thead>
+                <th scope="col">#</th>
+                <th scope="col">name</th>
+                <th scope="col">surname</th>
+                <th scope="col">email</th>
+                <th scope="col">username</th>
+                <th scope="col">password</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of users" style="color: #65737e">
+                    <th scope="row"  style="color:black">{{user.id}}</th>
+                    <th scope="row">{{user.firstName}}</th>
+                    <th scope="row">{{user.lastName}}</th>
+                    <th scope="row">{{user.email}}</th>
+                    <th scope="row">{{user.username}}</th>
+                    <th scope="row">{{user.password}}</th>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
